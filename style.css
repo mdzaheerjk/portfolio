@@ -53,6 +53,11 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+    /* New Colors */
+    --secondary-accent-color: #22c55e;
+    --tertiary-color: #f97316;
+    --info-color: #3b82f6;
 }
 
 /* Light Theme */
@@ -71,6 +76,11 @@
     --card-hover: #f1f5f9;
     --nav-bg: rgba(255, 255, 255, 0.8);
     --shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* New Colors for Light Theme */
+    --secondary-accent-color: #16a34a;
+    --tertiary-color: #ea580c;
+    --info-color: #2563eb;
 }
 
 /* ===== MAGNETIC BUTTONS ===== */
@@ -121,16 +131,13 @@
     cursor: pointer;
 }
 
-/* ===== PARTICLES.JS ===== */
-#particles-js {
-    position: absolute;
+/* ===== THREE.JS BACKGROUND ===== */
+#three-js-background {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background-color);
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     z-index: -1;
 }
 
@@ -376,26 +383,16 @@ a:hover {
 .nav-link {
     color: var(--text-primary);
     font-weight: 500;
-    transition: color var(--transition-fast);
+    transition: color var(--transition-fast), transform 0.2s ease; /* Added transform transition */
     position: relative;
     text-decoration: none;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary-color);
-    transition: width var(--transition-normal);
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-color);
     font-weight: 600;
+    transform: scale(1.05); /* Added scale effect */
 }
 
 .nav-link:hover::after,
@@ -468,14 +465,14 @@ a:hover {
 .social-link {
     color: var(--text-secondary);
     font-size: var(--font-size-xl);
-    transition: all var(--transition-normal);
+    transition: all var(--transition-normal), transform 0.2s ease; /* Added transform transition */
     padding: var(--spacing-sm);
     border-radius: var(--radius-md);
 }
 
 .social-link:hover {
     color: var(--primary-color);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1); /* Added scale effect */
 }
 
 .social-line {
@@ -715,11 +712,12 @@ a:hover {
     gap: var(--spacing-md);
     padding: var(--spacing-sm);
     border-radius: var(--radius-md);
-    transition: background-color var(--transition-fast);
+    transition: background-color var(--transition-fast), transform 0.2s ease; /* Added transform transition */
 }
 
 .skill-item:hover {
-    background: rgba(47, 128, 237, 0.1);
+    background: rgba(59, 130, 246, 0.1); /* Using --info-color */
+    transform: scale(1.03); /* Added scale effect */
 }
 
 .skill-item i {
@@ -816,7 +814,7 @@ a:hover {
 }
 
 .highlight {
-    background: rgba(47, 128, 237, 0.1);
+    background: rgba(34, 197, 94, 0.1); /* Using --secondary-accent-color */
     color: var(--primary-color);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
@@ -884,7 +882,7 @@ a:hover {
 }
 
 .blog-category {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     color: white;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
@@ -913,7 +911,7 @@ a:hover {
 }
 
 .tag {
-    background: rgba(47, 128, 237, 0.1);
+    background: rgba(59, 130, 246, 0.1); /* Using --info-color */
     color: var(--primary-color);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
