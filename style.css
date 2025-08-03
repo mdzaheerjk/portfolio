@@ -1,8 +1,8 @@
 /* ===== CSS VARIABLES ===== */
 :root {
     /* Colors - Dark Theme (Default) */
-    --primary-color: #2F80ED;
-    --accent-color: #56CCF2;
+    --primary-color: #38bdf8;
+    --accent-color: #6366f1;
     --background-color: #0f172a;
     --surface-color: #1e293b;
     --text-primary: #f8fafc;
@@ -58,7 +58,7 @@
 /* Light Theme */
 [data-theme="light"] {
     --primary-color: #2563eb;
-    --accent-color: #0ea5e9;
+    --accent-color: #4f46e5;
     --background-color: #ffffff;
     --surface-color: #f8fafc;
     --text-primary: #0f172a;
@@ -96,7 +96,7 @@ body {
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: var(--spacing-md);
 }
@@ -275,7 +275,7 @@ a:hover {
 }
 
 .nav-link.active {
-    background: rgba(47, 128, 237, 0.1);
+    background: var(--surface-color);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
 }
@@ -1329,4 +1329,4 @@ a:focus {
         min-height: auto;
         padding: var(--spacing-xl) 0;
     }
-} 
+}
