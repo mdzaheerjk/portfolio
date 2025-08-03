@@ -73,6 +73,135 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+/* ===== MAGNETIC BUTTONS ===== */
+.magnetic-btn {
+    transition: transform 0.3s ease;
+}
+
+/* ===== TILT CARDS ===== */
+.tilt-card {
+    transition: transform 0.3s ease;
+}
+
+/* ===== NOTIFICATION ===== */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    max-width: 400px;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-message {
+    margin-right: 1rem;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ===== PARTICLES.JS ===== */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+/* ===== CUSTOM CURSOR ===== */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+    z-index: 9999;
+}
+
+/* ===== PRELOADER ===== */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    border: 8px solid var(--surface-color);
+    border-top: 8px solid var(--primary-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* ===== RESET & BASE STYLES ===== */
 * {
     margin: 0;

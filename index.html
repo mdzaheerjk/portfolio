@@ -37,6 +37,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -115,8 +122,8 @@
                     Currently learning Python, DSA, and building my foundation for a career in tech.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="./assets/Resume.pdf" class="btn btn-secondary">Resume</a>
+                    <a href="#projects" class="btn btn-primary magnetic-btn">View My Work</a>
+                    <a href="./assets/Resume.pdf" class="btn btn-secondary magnetic-btn">Resume</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -356,7 +363,7 @@
                 <div class="section-line"></div>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card tilt-card">
                     <div class="project-header">
                         <div class="project-folder">
                             <i class="fas fa-folder"></i>
@@ -382,7 +389,7 @@
                         <span>HTML/CSS</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card tilt-card">
                     <div class="project-header">
                         <div class="project-folder">
                             <i class="fas fa-folder"></i>
@@ -408,7 +415,7 @@
                         <span>Transformers</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card tilt-card">
                     <div class="project-header">
                         <div class="project-folder">
                             <i class="fas fa-folder"></i>
@@ -436,7 +443,7 @@
                 </div>
                 
                 <!-- Project 4 -->
-                <div class="project-card">
+                <div class="project-card tilt-card">
                     <div class="project-header">
                         <div class="project-folder">
                             <i class="fas fa-folder"></i>
@@ -464,7 +471,7 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card">
+                <div class="project-card tilt-card">
                     <div class="project-header">
                         <div class="project-folder">
                             <i class="fas fa-folder"></i>
@@ -492,7 +499,7 @@
                 </div>
 
                 <!-- Project 6 -->
-                <div class="project-card">
+                <div class="project-card tilt-card">
                     <div class="project-header">
                         <div class="project-folder">
                             <i class="fas fa-folder"></i>
@@ -520,7 +527,7 @@
                 </div>
             </div>
             <div class="projects-footer">
-                <a href="https://github.com/mdzaheerjk" target="_blank" class="btn btn-secondary">
+                <a href="https://github.com/mdzaheerjk" target="_blank" class="btn btn-secondary magnetic-btn">
                     View More on GitHub
                 </a>
             </div>
@@ -608,7 +615,7 @@
                 </article>
             </div>
             <div class="blog-footer">
-                <a href="#" class="btn btn-secondary">View All Posts</a>
+                <a href="#" class="btn btn-secondary magnetic-btn">View All Posts</a>
             </div>
         </div>
     </section>
@@ -701,7 +708,7 @@
             <div class="resume-content">
                 <h2>Interested in working together?</h2>
                 <p>I'm currently looking for internship opportunities and open to collaborations on interesting projects.</p>
-                <a href="./assets/Resume.pdf" download class="btn btn-primary">
+                <a href="./assets/Resume.pdf" download class="btn btn-primary magnetic-btn">
                     <i class="fas fa-download"></i>
                     Download Resume
                 </a>
@@ -737,7 +744,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary magnetic-btn">
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
@@ -770,6 +777,9 @@
     </footer>
 
     <!-- Custom JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+n    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
