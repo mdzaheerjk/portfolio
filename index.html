@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio / Abhijeet Bhale</title>
+    
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets/android-chrome-512x512.png" type="image/x-icon"> 
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div id="scroll-bar" class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#1DCD9F] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#1DCD9F]"></div>
+</div>
+    <!-- Loading Animation -->
+<div id="loading">
+  <div class="loading-text" id="name-loader">
+    <span data-text="A">A</span>
+    <span data-text="B">B</span>
+    <span data-text="H">H</span>
+    <span data-text="I">I</span>
+    <span data-text="J">J</span>
+    <span data-text="E">E</span>
+    <span data-text="E">E</span>
+    <span data-text="T">T</span>
+  </div>
+</div>
+
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+  <!-- Hero Content -->
+  <div class="container text-center position-relative" style="z-index: 1">
+    <h1 class="display-4 fw-bold">
+      <span class="text-white me-2">Hi, I'm</span>
+      <button class="button" data-text="Abhijeet">
+        <span class="actual-text">&nbsp;Abhijeet&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Abhijeet&nbsp;</span>
+      </button>
+    </h1>
+    <p class="lead text-light mt-3">
+      An aspiring Full Stack Developer passionate about building sleek web
+      experiences.
+    </p>
+    <a href="#projects" class="shadow__btn mt-4">View Projects</a>
+  </div>
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div
+    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4"
+  >
+    <!-- Profile Image -->
+    <div
+      class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition duration-500"
+      id="about-img"
+    >
+      <img
+        src="./assets/AbhijeetBhalePortfolio.jpg"
+        alt="Abhijeet Bhale"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        I'm <span class="text-[#1DCD9F] font-bold">Abhijeet Bhale</span>, a
+        Full Stack Developer building creative and scalable web
+        applications.
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        I'm currently pursuing my B.Tech in Computer Science Engineering at
+        Medicaps University, Indore. I specialize in both frontend and
+        backend development, transforming ideas into functional digital
+        experiences using modern technologies.
+      </p>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        I'm passionate about
+        <span class="text-[#1DCD9F] font-bold">JavaScript</span>,
+        <span class="text-[#1DCD9F] font-bold">React</span>,
+        <span class="text-[#1DCD9F] font-bold"> Node.js</span>,
+        <span class="text-[#1DCD9F] font-bold">MongoDB</span>, and bringing
+        smooth, responsive UIs to life with animations and performance in
+        mind. Outside of code, I love exploring photography, tech, and new
+        ideas.
+      </p>
+
+      <!-- Social Icons -->
+      <ul class="example-2">
+        <li class="icon-content">
+          <a
+            href="https://www.instagram.com/isocyanideisgood?igsh=cDQ4NjEyeWFydDlp"
+            aria-label="Instagram"
+            data-social="instagram"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">Instagram</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://www.linkedin.com/in/abhijeetbhale7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            aria-label="LinkedIn"
+            data-social="linkedin"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="480" height="480" viewBox="0 0 48 48">
+              <path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">LinkedIn</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="mailto:abhijeetbhale7@gmail.com"
+            aria-label="Email"
+            data-social="email"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z"></path><path fill="#f5f5f5" d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z"></path><path fill="#e84f4b" d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">Gmail</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://github.com/abhijeetBhale"
+            aria-label="GitHub"
+            data-social="github"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <circle cx="28" cy="28" r="18" fill="#9fa8da"></circle><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M35.054,38.836	C31.97,41.137,28.144,42.5,24,42.5C13.783,42.5,5.5,34.217,5.5,24c0-2.917,0.675-5.676,1.878-8.13"></path><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13.869,8.518	C16.779,6.61,20.26,5.5,24,5.5c10.217,0,18.5,8.283,18.5,18.5c0,2.941-0.686,5.721-1.907,8.19"></path><path fill="#18193f" d="M34,23c0-1.574-0.576-3.038-1.558-4.275c0.442-1.368,0.93-3.771-0.242-5.648	c-2.251,0-3.73,1.545-4.436,2.514C26.602,15.213,25.333,15,24,15s-2.602,0.213-3.764,0.591c-0.706-0.969-2.184-2.514-4.436-2.514	c-1.328,2.126-0.526,4.45-0.073,5.43C14.638,19.788,14,21.334,14,23c0,3.78,3.281,6.94,7.686,7.776	c-1.309,0.673-2.287,1.896-2.587,3.38h-1.315c-1.297,0-1.801-0.526-2.502-1.415c-0.692-0.889-1.437-1.488-2.331-1.736	c-0.482-0.051-0.806,0.316-0.386,0.641c1.419,0.966,1.516,2.548,2.085,3.583C15.168,36.161,16.229,37,17.429,37H19v5.942h10v-7.806	c0-1.908-1.098-3.544-2.686-4.36C30.719,29.94,34,26.78,34,23z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">GitHub</div>
+        </li>
+      </ul>
+
+      <!-- Download Resume Button -->
+      <div class="flex align-items-center justify-content-center mt-8" style="gap: 50px">
+        <a
+          href="./assets/Abhijeet Bhale Resume Updated 1.pdf"
+          download
+        >
+          <div class="download-container">
+            <label class="download-label">
+              <input type="checkbox" class="download-input" />
+              <span class="download-circle"
+                ><svg
+                  class="download-icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 19V5m0 14-4-4m4 4 4-4"
+                  ></path>
+                </svg>
+                <div class="download-square"></div>
+              </span>
+              <p class="download-title">Download</p>
+              <p class="download-title">Open</p>
+            </label>
+          </div>
+        </a>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- JOURNEY SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">My Journey</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
+
+      <!-- Timeline Card 1 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Internship at @AWS Cloud Foundation</h3>
+            <span class="text-sm text-gray-400">June 2025 - Aug 2025</span>
+            <p class="mt-2 text-gray-300">Worked on AWS services, cloud deployment, and automation. Gained hands-on experience with cloud infrastructure and DevOps practices.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 2 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Internship at @ProdigyInfoTech</h3>
+            <span class="text-sm text-gray-400">June 2024 - Aug 2024</span>
+            <p class="mt-2 text-gray-300">Worked on UI/UX design, responsive components, and integrated APIs using React and Tailwind CSS.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+
+      <!-- Timeline Card 3 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">B.Tech – Computer Science (CSBS)</h3>
+            <span class="text-sm text-gray-400">Medi-Caps University, Indore (2022 - 2026)</span>
+            <p class="mt-2 text-gray-300">Focused on full-stack development, AI projects, and cloud computing technologies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 4 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">High School – PCM </h3>
+            <span class="text-sm text-gray-400">Shree Madhav Vidhya Peeth School, Indore (2020)</span>
+            <p class="mt-2 text-gray-300">Built an early interest in coding, building basic games and websites in school projects.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+    <!-- FRONTEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="frontend">
+      <!-- Label -->
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#frontend').scrollIntoView({behavior: 'smooth'})">FRONTEND</div>
+      </div>
+
+      <!-- Tech Grid -->
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <!-- Tech Icons Here -->
+        <div class="flex items-center gap-2 "><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6"><span class="text-lg">Javascript</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6 h-6"><span class="text-lg">React</span></div>
+        
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-6 h-6"/>
+         <span class="text-lg">Tailwind CSS</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="w-6 h-6"/><span class="text-lg">HTML</span></div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6" />
+         <span class="text-lg">CSS</span></div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-wave-square"></i>
+          <span class="text-lg">GSAP</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./assets/framer-logo.png"
+         class="w-6 h-6" id="framer"><span class="text-lg">Framer Motion</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-6 h-6"><span class="text-lg">C</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-6 h-6"><span class="text-lg">C++</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-6 h-6"><span class="text-lg">Bootstrap</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">Python</span></div>
+      </div>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="backend">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#backend').scrollIntoView({behavior: 'smooth'})">BACKEND</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6"><span class="text-lg">Node.js</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="w-6 h-6 bg-white rounded-full p-0.5"><span class="text-lg">Next.js</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-6 h-6 bg-white rounded p-0.5"><span class="text-lg">Express.js</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg" class="w-6 h-6"><span class="text-lg">React Router</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" class="w-6 h-6"><span class="text-lg">Nodemon</span></div>
+      </div>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="database">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#database').scrollIntoView({behavior: 'smooth'})">DATABASE</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg" class="w-6 h-6"><span class="text-lg">Mongoose</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6"><span class="text-lg">MongoDB</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" class="w-6 h-6"><span class="text-lg">Oracle</span></div>
+        
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="tools">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#tools').scrollIntoView({behavior: 'smooth'})">TOOLS</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6"><span class="text-lg">Git</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-6 h-6"><span class="text-lg">Docker</span></div>
+        <div class="flex items-center gap-2"><img src="./assets/github-logo.png" class="w-6 h-6"><span class="text-lg">GitHub</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="w-6 h-6"><span class="text-lg">Google Cloud</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="w-6 h-6"><span class="text-lg">AWS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB ACTIVITY SECTION -->
+<section id="github-activity" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">GitHub Activity</h2>
+      <p class="text-gray-400 text-lg">My latest contributions and coding activity.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <!-- GitHub Stats Cards -->
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#1DCD9F] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#1DCD9F] mb-2" id="githubRepos">-</div>
+        <div class="text-gray-400">Public Repositories</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#1DCD9F] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#1DCD9F] mb-2" id="githubStars">-</div>
+        <div class="text-gray-400">Total Stars</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#1DCD9F] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#1DCD9F] mb-2" id="githubFollowers">-</div>
+        <div class="text-gray-400">Followers</div>
+      </div>
+      
+      <div class="github-stat-card bg-[#111] p-6 rounded-2xl text-center border border-gray-800 hover:border-[#1DCD9F] transition-all duration-300">
+        <div class="text-3xl font-bold text-[#1DCD9F] mb-2" id="githubCommits">-</div>
+        <div class="text-gray-400">Recent Commits</div>
+      </div>
+    </div>
+
+    <!-- GitHub Activity Feed -->
+    <div class="bg-[#111] rounded-2xl p-6 border border-gray-800">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-xl font-semibold text-[#1DCD9F]">Recent Activity</h3>
+        <a href="https://github.com/abhijeetBhale" target="_blank" class="text-[#1DCD9F] hover:text-[#17b890] transition-colors">
+          View Profile <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+      </div>
+      
+      <div id="githubActivity" class="space-y-4">
+        <!-- Activity items will be loaded here -->
+        <div class="flex items-center justify-center py-8">
+          <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-[#1DCD9F]"></div>
+          <span class="ml-3 text-gray-400">Loading activity...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Languages -->
+    <div class="mt-12">
+      <h3 class="text-xl font-semibold text-[#1DCD9F] mb-6 text-center">Most Used Languages</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="githubLanguages">
+        <!-- Language cards will be loaded here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section id="blog" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Latest Blog Posts</h2>
+      <p class="text-gray-400 text-lg">Thoughts, tutorials, and insights from my journey in tech.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="./assets/portfolio-ss.png" 
+               alt="Portfolio Website Screenshot" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-[#1DCD9F] text-black px-3 py-1 rounded-full text-xs font-semibold">Portfolio</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>July 1, 2025</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>3 min read</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#1DCD9F] transition-colors">
+            <a href="#" class="block">Portfolio Website</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Learn the essential techniques to optimize your React applications for better performance, including memoization, code splitting, and bundle optimization.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="https://dev.to/isocyandeisgood/modern-developer-portfolio-design-tech-stack-lessons-learned-2lp2" class="text-[#1DCD9F] hover:text-[#17b890] font-semibold transition-colors">
+              Read More <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-heart text-red-400"></i>
+              <span class="text-sm text-gray-400">10</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="./assets/readme-generator-ss.png" 
+               alt="GitHub Readme Generator" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">GithHub</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>July 2, 2025</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>1 min read</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#1DCD9F] transition-colors">
+            <a href="#" class="block">GitHub Readme Generator</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            I've created a GitHub Readme Generator to help you create and preview GitHub README files.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="https://forem.com/isocyandeisgood/build-the-perfect-github-profile-readme-with-my-open-source-generator-49a6" class="text-[#1DCD9F] hover:text-[#17b890] font-semibold transition-colors">
+              Read More <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-heart text-red-400"></i>
+              <span class="text-sm text-gray-400">5</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Blog Post 2 -->
+      <!-- <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" 
+               alt="Node.js Backend" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Node.js</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>Dec 10, 2024</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>8 min read</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#1DCD9F] transition-colors">
+            <a href="#" class="block">Building Scalable APIs with Node.js</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            A comprehensive guide to building robust and scalable REST APIs using Node.js, Express, and MongoDB with best practices for production deployment.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-[#1DCD9F] hover:text-[#17b890] font-semibold transition-colors">
+              Read More <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-heart text-red-400"></i>
+              <span class="text-sm text-gray-400">18</span>
+            </div>
+          </div>
+        </div>
+      </article> -->
+
+      <!-- Blog Post 3 -->
+      <!-- <article class="blog-card bg-[#111] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" 
+               alt="AI Integration" 
+               class="w-full h-48 object-cover"
+               loading="lazy">
+          <div class="absolute top-4 left-4">
+            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">AI</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-gray-400 mb-3">
+            <i class="fas fa-calendar mr-2"></i>
+            <span>Dec 5, 2024</span>
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock mr-2"></i>
+            <span>6 min read</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-white hover:text-[#1DCD9F] transition-colors">
+            <a href="#" class="block">Integrating AI into Web Applications</a>
+          </h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Explore how to integrate AI services like Google Gemini into your web applications to create intelligent and interactive user experiences.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-[#1DCD9F] hover:text-[#17b890] font-semibold transition-colors">
+              Read More <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+            <div class="flex items-center space-x-2">
+              <i class="fas fa-heart text-red-400"></i>
+              <span class="text-sm text-gray-400">32</span>
+            </div>
+          </div>
+        </div>
+      </article> -->
+    </div>
+
+    <!-- View All Posts Button -->
+    <div class="text-center mt-12">
+      <a href="#" class="inline-flex items-center bg-[#1DCD9F] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#17b890] transition-all duration-300 transform hover:scale-105">
+        View All Posts
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS SECTION -->
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-300 text-lg">Some of the things I've built.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/readme-generator-ss2.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover"/>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">GitHub Readme Generator</h3>
+          <p class="text-gray-700 mb-4">
+            Easily create and preview GitHub README files. Generate markdown and download or copy it for your projects.  
+            Simple, fast, and no sign-up needed.
+          </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+              React
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-4 h-4" />
+              Tailwind CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" alt="Markdown" class="w-4 h-4" />
+              Markdown
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" alt="Netlify" class="w-4 h-4" />
+              Netlify
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original.svg" alt="Vite" class="w-4 h-4" />
+              Vite
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://readme-generator-github-abhijeetbhale.netlify.app/" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/abhijeetBhale/Readme-Generator" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/ATS-Resume-SS.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">ATS Resume Checker</h3>
+          <p class="text-gray-700 mb-4">
+            An intelligent resume analysis tool that evaluates resumes against job descriptions using AI-powered semantic matching and provides actionable improvement suggestions.
+          </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+              React
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-4 h-4" />
+              Tailwind CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://raw.githubusercontent.com/gilbarbara/logos/92bb74e98bca1ea1ad794442676ebc4e75038adc/logos/openai-icon.svg" alt="Markdown" class="w-4 h-4" />
+              Open AI
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://render.com/brand/render_1105076560.svg" alt="Netlify" class="w-4 h-4" />
+              Render
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://raw.githubusercontent.com/gilbarbara/logos/92bb74e98bca1ea1ad794442676ebc4e75038adc/logos/framer.svg" alt="Vite" class="w-4 h-4" />
+              Framer
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://ats-resume-checker-frontend.onrender.com" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/abhijeetBhale/ATS-Resume-Checker" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/Boost_AI SS.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Boost AI</h3>
+          <p class="text-gray-700 mb-4">
+            An AI productivity tool using Google Gemini for content generation and task automation. Includes real-time chat and document analysis. Fast, simple, and secure.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+              React
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-4 h-4" />
+              MongoDB
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+              Node.js
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" class="w-4 h-4" />
+              Gemini
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-4 h-4" />
+              Express
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://boost-ai-chat.vercel.app/" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/abhijeetBhale/chatgpt-clone" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/pinterest-clone .png" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Pinterest Clone</h3>
+          <p class="text-gray-700 mb-4">
+            A visually rich and fully responsive Pinterest Clone crafted using React, React Router, and Tailwind CSS, offering a seamless browsing experience with smooth navigation and a modern UI design.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+              React
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" class="w-4 h-4" />
+              Tailwindcss
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" alt="ReactRouter" class="w-4 h-4" />
+              ReactRouter
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-4 h-4" />
+              MongoDB
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-4 h-4" />
+                Node.js
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/abhijeetBhale/Pinterest-Clone" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/abhijeetBhale/Pinterest-Clone" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+       <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/finger-fiasco.png" alt="Finger Fiasco Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Finger Fiasco</h3>
+          <p class="text-gray-700 mb-4">
+            A fast-paced typing game to test and improve your typing speed. Built using HTML, CSS, JavaScript with custom game logic and animated UI.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-4 h-4" />
+              Bootstrap
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-4 h-4" />
+              JavaScript
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://abhijeetbhale.github.io/FingerFiasco/home.html" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/abhijeetbhale/FingerFiasco" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/Pizza-Store-Landing-Page.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Cheese Oven</h3>
+          <p class="text-gray-700 mb-4">
+            A vibrant and appetizing landing page for a pizza store, an interactive menu, online ordering, and special offers to entice customers.
+          </p>
+
+          <!-- Tech Stack Badges -->
+            <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-4 h-4" />
+              Bootstrap
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-4 h-4" />
+              JavaScript
+            </span>
+            </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://abhijeetbhale.github.io/Landing-Page-Project-Cheese-Oven/" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/abhijeetBhale/Landing-Page-Project-Cheese-Oven" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/portfolio-ss.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-700 mb-4">
+            My portfolio website featuring my projects, skills, and journey. Built with HTML, CSS, and JavaScript for a modern, interactive experience.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+              HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" class="w-4 h-4" />
+              Tailwindcss
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-4 h-4" />
+              JavaScript
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+              CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+              <img src="./assets/framer-logo.png" alt="Framer Motion" class="w-4 h-4" />
+              Framer Motion
+            </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://abhijeetbhale.github.io/Portfolio/" target="_blank"
+              class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo 
+            </a>
+            <a href="https://github.com/abhijeetBhale/Portfolio" target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub 
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING PROJECTS SECTION -->
+<section id="upcoming-projects" class="relative bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Upcoming Projects</h2>
+    <p class="text-gray-400 text-lg">Some exciting ideas I'm currently working on.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!-- CARD: Social Media App -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Social Media App</h3>
+      <p class="text-gray-700 text-lg mb-4">A modern social media platform featuring user profiles, posts, real-time chat, notifications, and interactive feeds built with the MERN stack and Next.js.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+
+    <!-- CARD: School Management Dashboard -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">School Management Dashboard</h3>
+      <p class="text-gray-700 text-lg mb-4">A MERN-based admin dashboard to manage students, attendance, teachers, and performance data with charts and analytics.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+
+    <!-- CARD: Rental Web Application -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Rental Web Application</h3>
+      <p class="text-gray-700 text-lg mb-4">A property rental platform with user authentication, property listings, filtering, booking system, and admin control panel.</p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section id="contact-form" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+      <p class="text-gray-400 text-lg">Let's discuss your next project or just say hello!</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-[#1DCD9F]">Let's Connect</h3>
+          <p class="text-gray-300 mb-6">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and development.</p>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+              <i class="fas fa-envelope text-white"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Email</p>
+              <p class="text-white">abhijeetbhale7@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+              <i class="fas fa-map-marker-alt text-white"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Location</p>
+              <p class="text-white">Indore, Madhya Pradesh, India</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+              <i class="fas fa-clock text-white"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Response Time</p>
+              <p class="text-white">Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white text-black rounded-2xl p-8 shadow-xl">
+        <form id="contactForm" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="block text-sm font-medium mb-2">First Name <span style="color: red">*</span></label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+                placeholder="Abhijeet"
+              >
+            </div>
+            <div>
+              <label for="lastName" class="block text-sm font-medium mb-2">Last Name <span style="color: red">*</span></label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+                placeholder="Bhale"
+              >
+            </div>
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium mb-2">Email <span style="color: red">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+              placeholder="abhijeetbhale7@gmail.com"
+            >
+          </div>
+          
+          <div>
+            <label for="subject" class="block text-sm font-medium mb-2">Subject <span style="color: red">*</span></label>
+            <select 
+              id="subject" 
+              name="subject" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+            >
+              <option value="">Select a subject</option>
+              <option value="project-inquiry">Project Inquiry</option>
+              <option value="job-opportunity">Job Opportunity</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="general">General Message</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">Message <span style="color: red">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all resize-none"
+              placeholder="Tell me about your project or how I can help you..."
+            ></textarea>
+            <p class="text-xs text-gray-500 mt-1">
+              💡 Tip: Write a meaningful message with at least 3 words and 10 characters. Avoid random characters or excessive repetition.
+            </p>
+          </div>
+          
+          <input type="hidden" name="_subject" value="New message from Abhijeet Bhale Portfolio!" />
+          <input type="hidden" name="site" value="Abhijeet Bhale Portfolio" />
+          
+          <button 
+            type="submit" 
+            id="submitBtn"
+            class="w-full bg-[#1DCD9F] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#17b890] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#1DCD9F] focus:ring-offset-2"
+          >
+            <span id="submitText">Send Message</span>
+            <span id="submitLoading" class="hidden">
+              <i class="fas fa-spinner fa-spin mr-2"></i>Sending...
+            </span>
+          </button>
+        </form>
+        
+        <!-- Success/Error Messages -->
+        <div id="formMessage" class="mt-4 p-4 rounded-lg hidden">
+          <p id="messageText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+  <div class="w-full max-w-4xl text-center flex flex-col items-center gap-6">
+    <!-- Subtitle -->
+    <p class="text-gray-400 text-lg">Let's connect and build something amazing!</p>
+
+    <!-- Email Link -->
+    <a href="mailto:abhijeetbhale7@gmail.com" class="hover:text-gray-400 transition">
+      <h2 class="text-4xl font-bold mb-2">abhijeetbhale7@gmail.com</h2>
+    </a>
+
+    <a href="https://github.com/abhijeetBhale" target="_blank">
+<button
+  href="#"
+  class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white shadow hover:bg-black/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2"
+>
+  <span
+    class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"
+  ></span>
+  <div class="flex items-center">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 438.549 438.549">
+      <path
+        d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+      ></path>
+    </svg>
+    <a href="https://github.com/abhijeetBhale" target="_blank"><span class="ml-1 text-white">Star on GitHub</span></a>
+  </div>
+  <div class="ml-2 flex items-center gap-1 text-sm md:flex">
+    <svg
+      class="w-4 h-4 text-gray-500 transition-all duration-300 group-hover:text-yellow-300"
+      data-slot="icon"
+      aria-hidden="true"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+        fill-rule="evenodd"
+      ></path>
+    </svg>
+    <span
+      class="inline-block tabular-nums tracking-wider font-display font-medium text-white"
+      >8</span
+    >
+  </div>
+</button>
+</a>
+  </div>  
+</section>
+    <a
+      href="mailto:abhijeetbhale7@gamil.com?subject=Let's Connect&body=Hi Abhijeet,%0D%0A%0D%0AI wanted to get in touch with you..."
+      class="fixed-email"
+      title="Mail Me"
+    >
+      abhijeetbhale7@gamil.com
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Back to Top Button -->
+    <div class="wrapper">
+      <button class="back2top-button" id="backToTop">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+        </svg>
+        <span class="button-label">Back to Top</span>
+      </button>
+    </div>
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,941 @@
+/* Reset & basic setup */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Special Gothic Expanded One", sans-serif; 
+    background-color: #000;
+    color: #fff;
+    overflow: -moz-scrollbars-none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    scrollbar-width: none; /* For Firefox */
+    /* scroll-behavior: smooth; */
+  }
+  
+  /* Hide scrollbar for all browsers */
+  body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  /* Hide scrollbar for all elements */
+  *::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  /* Hide scrollbar for Firefox */
+  * {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  }
+  
+  /* Hide scrollbar for specific elements that might have scrollbars */
+  html::-webkit-scrollbar,
+  .container::-webkit-scrollbar,
+  .container-fluid::-webkit-scrollbar,
+  section::-webkit-scrollbar,
+  div::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ensure smooth scrolling is enabled */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Additional scrollbar hiding for specific elements */
+  .code-box::-webkit-scrollbar,
+  .project-card::-webkit-scrollbar,
+  .upcoming-card::-webkit-scrollbar,
+  .journey-card::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Custom scroll indicator styling */
+  #scroll-indicator {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Ensure no scrollbars appear on any scrollable content */
+  .overflow-auto::-webkit-scrollbar,
+  .overflow-scroll::-webkit-scrollbar,
+  .overflow-y-auto::-webkit-scrollbar,
+  .overflow-x-auto::-webkit-scrollbar {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Loading screen */
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Font and base letter style */
+.loading-text span {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+
+/* Glowing overlay */
+.loading-text span::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1DCD9F;
+  opacity: 0;
+}
+
+  
+  /* Home page Name Animation  */
+
+  /* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: default;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #1DCD9F;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Special Gothic Expanded One", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* Hover animation text */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s ease;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* Trigger hover effect */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+  
+/* Hero View Project Button */
+
+.lead{
+  margin-bottom: 30px;
+}
+
+
+.shadow__btn {
+  /* margin-top: 120px; */
+  padding: 8px 18px;
+  border: none;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 20px rgb(0, 140, 255);
+  text-decoration: none;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+              0 0 25px rgb(0, 140, 255),
+              0 0 50px rgb(0, 140, 255),
+              0 0 100px rgb(0, 140, 255);
+}
+
+/* Hero mail  */
+.fixed-email {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: left center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 0.8rem;
+  color: #1DCD9F;
+  text-decoration: none;
+  letter-spacing: 2px;
+  z-index: 999;
+  transition: color 0.3s ease;
+  padding: 5px;
+}
+
+.fixed-email:hover {
+  cursor: pointer;
+}
+
+
+  /* About me  */
+  /* Removed old dbutton styles - replaced with animated download button */
+  
+  /* Journey Section  */
+  .group {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Mobile menu */
+  #mobileMenu a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  #mobileMenu a:hover {
+    color: #0d6efd;
+  }
+  
+  
+  /* Hero section */
+  .hero {
+    min-height: 90vh;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-left {
+    flex: 1 1 45%;
+  }
+  
+  .hero-right {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .code-box {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    width: 100%;
+    max-width: 500px;
+    font-family: "Special Gothic Expanded One", sans-serif;    font-size: 1rem;
+    overflow: auto;
+    border-left: 4px solid #0d6efd;
+    transition: transform 0.3s ease;
+  }
+  
+  .code-box:hover {
+    transform: scale(1.03);
+  }
+  
+  .view-projects-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .view-projects-btn:hover {
+    transform: scale(1.05);
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  /* About Section  */
+  #about i{
+    font-size: 30px;
+  }
+
+  /* Tech Stack */
+  #techstack i {
+    font-size: 50px;
+  }
+  
+
+  #framer{
+
+    color: white;
+  }
+
+  /* Animated Social Icons */
+  ul {
+    list-style: none;
+  }
+
+  li::after {
+    content: "";
+    display: block;
+    height: 0px;
+    transition: height 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  li:hover::after {
+    height: 10px;
+  }
+
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+  }
+
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: -40px;
+  }
+
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background-color: #e1306c;
+  }
+
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0a66c2;
+  }
+
+  .example-2 .icon-content a[data-social="email"] .filled,
+  .example-2 .icon-content a[data-social="email"] ~ .tooltip {
+    background-color: #ea4335;
+  }
+
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #333;
+  }
+
+  /* Animated Download Button */
+  .download-container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .download-label {
+    background-color: transparent;
+    border: 2px solid #1DCD9F;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 160px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding: 5px;
+    position: relative;
+  }
+
+  .download-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    transition: all 0.4s ease;
+    border-radius: 100%;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .download-label .download-input {
+    display: none;
+  }
+
+  .download-label .download-title {
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.4s ease;
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+    text-align: center;
+  }
+
+  .download-label .download-title:last-child {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .download-label .download-circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #1DCD9F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    overflow: hidden;
+  }
+
+  .download-label .download-circle .download-icon {
+    color: #fff;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+
+  .download-label .download-circle .download-square {
+    aspect-ratio: 1;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+
+  .download-label .download-circle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #17b890;
+    width: 100%;
+    height: 0;
+    transition: all 0.4s ease;
+  }
+
+  .download-label:has(.download-input:checked) {
+    width: 57px;
+    animation: installed 0.4s ease 3.5s forwards;
+  }
+
+  .download-label:has(.download-input:checked)::before {
+    animation: rotate 3s ease-in-out 0.4s forwards;
+  }
+
+  .download-label .download-input:checked + .download-circle {
+    animation:
+      pulse 1s forwards,
+      circleDelete 0.2s ease 3.5s forwards;
+    rotate: 180deg;
+  }
+
+  .download-label .download-input:checked + .download-circle::before {
+    animation: installing 3s ease-in-out forwards;
+  }
+
+  .download-label .download-input:checked + .download-circle .download-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .download-label .download-input:checked ~ .download-circle .download-square {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .download-label .download-input:checked ~ .download-title {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .download-label .download-input:checked ~ .download-title:last-child {
+    animation: showInstalledMessage 0.4s ease 3.5s forwards;
+  }
+
+  @keyframes pulse {
+    0% {
+      scale: 0.95;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      scale: 1;
+      box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    }
+    100% {
+      scale: 0.95;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+  @keyframes installing {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(-90deg) translate(27px) rotate(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    99% {
+      transform: rotate(270deg) translate(27px) rotate(270deg);
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes installed {
+    100% {
+      width: 150px;
+      border-color: #17b890;
+    }
+  }
+
+  @keyframes circleDelete {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes showInstalledMessage {
+    100% {
+      opacity: 1;
+      visibility: visible;
+      right: 56px;
+    }
+  }
+  
+  /* Ensure particles work with locomotive scroll */
+  #particles-hero,
+  #particles-projects {
+    position: absolute !important;
+    z-index: 0;
+  }
+  
+  /* Custom Cursor */
+  * {
+    cursor: url('./assets/cursor.png'), auto;
+  }
+  
+  /* Custom cursor for interactive elements */
+  a, button, .button, .shadow__btn, .download-label, 
+  .project-card, .upcoming-card, .journey-card,
+  .example-2 .icon-content a,
+  .category-label,
+  input[type="checkbox"],
+  [data-scroll] {
+    cursor: url('./assets/cursor.png'), pointer;
+  }
+  
+  /* Ensure cursor works on all clickable elements */
+  [onclick], [role="button"], [tabindex] {
+    cursor: url('./assets/cursor.png'), pointer;
+  }
+  
+/* Performance Optimizations */
+
+/* Lazy loading for images */
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .loading-text span,
+  .button .hover-text,
+  .shadow__btn,
+  .download-container,
+  .project-card,
+  .journey-card {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Optimize animations for better performance */
+.project-card,
+.journey-card,
+.upcoming-card {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Smooth scrolling optimization */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for fixed header if any */
+}
+
+/* Font loading optimization */
+@font-face {
+  font-family: 'Special Gothic Expanded One';
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+}
+
+/* Critical CSS for above-the-fold content */
+.hero-section {
+  contain: layout style paint;
+}
+
+/* Optimize particle animations */
+#particles-hero,
+#particles-projects {
+  contain: layout style paint;
+  will-change: transform;
+}
+
+/* Contact form optimizations */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  contain: layout style;
+}
+
+/* Loading state optimizations */
+#loading {
+  contain: layout style paint;
+}
+
+/* Scroll indicator optimization */
+#scroll-indicator {
+  contain: layout style;
+  will-change: height;
+}
+
+/* Custom cursor optimization */
+* {
+  cursor: url('./assets/cursor.png'), auto;
+}
+
+/* Focus management for accessibility */
+*:focus {
+  outline: 2px solid #1DCD9F;
+  outline-offset: 2px;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #1DCD9F;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .project-card,
+  .journey-card {
+    break-inside: avoid;
+  }
+}
+
+/* Back to Top Button */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+
+.back2top-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(29, 205, 159, 0.253);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.back2top-button.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back2top-button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #1DCD9F;
+  box-shadow: 0px 0px 0px 4px rgba(29, 205, 159, 0.4);
+}
+
+.svgIcon {
+  width: 12px;
+  transition: transform 0.3s ease;
+}
+
+.back2top-button:hover .svgIcon {
+  transform: translateY(-220%);
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button-label {
+  position: absolute;
+  bottom: -20px;
+  color: white;
+  font-size: 0px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.back2top-button:hover .button-label {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wrapper {
+    bottom: 20px;
+    right: 20px;
+  }
+  .back2top-button {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .back2top-button:hover {
+    width: 120px;
+  }
+}
+
+/* Form validation styles */
+.validation-error {
+  animation: slideIn 0.3s ease-out;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: rgba(239, 68, 68, 0.1);
+  border-left: 3px solid #ef4444;
+}
+
+.validation-success {
+  animation: slideIn 0.3s ease-out;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: rgba(34, 197, 94, 0.1);
+  border-left: 3px solid #22c55e;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced form input styles */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: #1DCD9F;
+  box-shadow: 0 0 0 3px rgba(29, 205, 159, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-form input.border-red-500,
+.contact-form textarea.border-red-500 {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.contact-form input.border-green-500,
+.contact-form textarea.border-green-500 {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+/* Form validation icon styles */
+.validation-success::before {
+  content: "✓";
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.validation-error::before {
+  content: "⚠";
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #ef4444;
+}
+
+/* Responsive validation messages */
+@media (max-width: 768px) {
+  .validation-error,
+  .validation-success {
+    font-size: 0.8rem;
+    padding: 0.375rem;
+  }
+}
