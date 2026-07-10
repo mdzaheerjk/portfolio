@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0a0a0a"/>
+  <circle cx="200" cy="155" r="65" fill="#262626"/>
+  <ellipse cx="200" cy="310" rx="90" ry="55" fill="#1a1a1a"/>
+  <text x="200" y="380" text-anchor="middle" fill="#525252" font-family="system-ui, sans-serif" font-size="12" letter-spacing="2">PROFILE</text>
+</svg>
