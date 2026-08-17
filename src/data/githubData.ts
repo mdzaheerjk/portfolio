@@ -1,10 +1,10 @@
 import { GitHubRepo } from '../types';
 
 export const githubProfile = {
-  username: 'zaheerjk',
+  username: 'mdzaheerjk',
   name: 'Zaheer JK',
   bio: 'AI/ML Engineer • Building intelligent systems, models, algorithms, and production AI products.',
-  profileUrl: 'https://github.com/zaheerjk',
+  profileUrl: 'https://github.com/mdzaheerjk',
   totalRepos: 24,
   publicGists: 12,
   followers: 48,
@@ -27,7 +27,7 @@ export const featuredRepos: GitHubRepo[] = [
     language: 'Python',
     stars: 18,
     forks: 6,
-    url: 'https://github.com/zaheerjk/NLP-with-Transformers',
+    url: 'https://github.com/mdzaheerjk/NLP-with-Transformers',
     topics: ['transformers', 'nlp', 'pytorch', 'huggingface', 'bert'],
     updatedAt: 'Updated 3 days ago'
   },
@@ -37,7 +37,7 @@ export const featuredRepos: GitHubRepo[] = [
     language: 'Python',
     stars: 26,
     forks: 9,
-    url: 'https://github.com/zaheerjk/Hands-On-ML-with-Scikit-Learn-and-PyTorch',
+    url: 'https://github.com/mdzaheerjk/Hands-On-ML-with-Scikit-Learn-and-PyTorch',
     topics: ['machine-learning', 'scikit-learn', 'pytorch', 'deep-learning', 'algorithms'],
     updatedAt: 'Updated 1 week ago'
   },
@@ -47,7 +47,7 @@ export const featuredRepos: GitHubRepo[] = [
     language: 'TypeScript',
     stars: 34,
     forks: 11,
-    url: 'https://github.com/zaheerjk/SageStudio',
+    url: 'https://github.com/mdzaheerjk/SageStudio',
     topics: ['ml-visualizer', 'deep-learning', 'algorithms', 'react', 'tensorflow-js'],
     updatedAt: 'Updated 2 days ago'
   },
@@ -57,7 +57,7 @@ export const featuredRepos: GitHubRepo[] = [
     language: 'TypeScript',
     stars: 42,
     forks: 14,
-    url: 'https://github.com/zaheerjk/SageMap',
+    url: 'https://github.com/mdzaheerjk/SageMap',
     topics: ['ai-roadmap', 'learning-resources', 'research-papers', 'curriculum'],
     updatedAt: 'Updated 5 days ago'
   },
@@ -67,7 +67,7 @@ export const featuredRepos: GitHubRepo[] = [
     language: 'C++',
     stars: 22,
     forks: 8,
-    url: 'https://github.com/zaheerjk/Striver-SDE-Sheet-Solutions',
+    url: 'https://github.com/mdzaheerjk/Striver-SDE-Sheet-Solutions',
     topics: ['dsa', 'leetcode', 'algorithms', 'data-structures', 'cpp'],
     updatedAt: 'Updated 2 weeks ago'
   },
@@ -77,7 +77,7 @@ export const featuredRepos: GitHubRepo[] = [
     language: 'Python',
     stars: 19,
     forks: 5,
-    url: 'https://github.com/zaheerjk/Moodline-Emotion-Detection',
+    url: 'https://github.com/mdzaheerjk/Moodline-Emotion-Detection',
     topics: ['bigru', 'emotion-detection', 'fastapi', 'nlp', 'keras'],
     updatedAt: 'Updated 3 weeks ago'
   }

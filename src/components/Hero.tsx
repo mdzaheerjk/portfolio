@@ -124,31 +124,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onNavigateToPage }) =>
               <span className="text-neutral-900 font-semibold uppercase tracking-wider text-[11px]">Connect:</span>
               
               <a
-                href="https://github.com/zaheerjk"
+                href="https://github.com/mdzaheerjk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-neutral-800 hover:text-black transition-colors"
               >
                 <Github className="w-3.5 h-3.5" />
-                <span>github.com/zaheerjk</span>
+                <span>github.com/mdzaheerjk</span>
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/mdzaheerjk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-neutral-800 hover:text-black transition-colors"
               >
                 <Linkedin className="w-3.5 h-3.5" />
-                <span>LinkedIn</span>
+                <span>linkedin.com/in/mdzaheerjk</span>
               </a>
 
               <a
-                href="mailto:info.zaheerjk@gmail.com"
+                href="mailto:zaheerjkxai@gmail.com"
                 className="flex items-center gap-1.5 text-neutral-800 hover:text-black transition-colors"
               >
                 <Mail className="w-3.5 h-3.5" />
-                <span>info.zaheerjk@gmail.com</span>
+                <span>zaheerjkxai@gmail.com</span>
               </a>
             </div>
           </div>

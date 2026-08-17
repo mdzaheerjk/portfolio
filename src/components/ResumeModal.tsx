@@ -64,16 +64,16 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               AI/ML Engineer • Machine Learning • Generative AI • Deep Learning
             </p>
             <div className="mt-3 flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-neutral-600">
-              <a href="mailto:info.zaheerjk@gmail.com" className="hover:underline flex items-center gap-1">
-                <Mail className="w-3.5 h-3.5" /> info.zaheerjk@gmail.com
+              <a href="mailto:zaheerjkxai@gmail.com" className="hover:underline flex items-center gap-1">
+                <Mail className="w-3.5 h-3.5" /> zaheerjkxai@gmail.com
               </a>
               <span>•</span>
-              <a href="https://github.com/zaheerjk" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
-                <Github className="w-3.5 h-3.5" /> github.com/zaheerjk
+              <a href="https://github.com/mdzaheerjk" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                <Github className="w-3.5 h-3.5" /> github.com/mdzaheerjk
               </a>
               <span>•</span>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
-                <Linkedin className="w-3.5 h-3.5" /> LinkedIn
+              <a href="https://linkedin.com/in/mdzaheerjk" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                <Linkedin className="w-3.5 h-3.5" /> linkedin.com/in/mdzaheerjk
               </a>
             </div>
           </div>

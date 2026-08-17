@@ -208,7 +208,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="pt-3 border-t border-neutral-200 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/zaheerjk"
+                href="https://github.com/mdzaheerjk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md bg-neutral-100 text-neutral-700 hover:text-black hover:bg-neutral-200"
@@ -216,7 +216,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/mdzaheerjk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md bg-neutral-100 text-neutral-700 hover:text-black hover:bg-neutral-200"
@@ -224,7 +224,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="mailto:info.zaheerjk@gmail.com"
+                href="mailto:zaheerjkxai@gmail.com"
                 className="p-2 rounded-md bg-neutral-100 text-neutral-700 hover:text-black hover:bg-neutral-200"
               >
                 <Mail className="w-4 h-4" />

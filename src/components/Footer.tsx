@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
           {/* Social Links */}
           <div className="flex flex-wrap items-center gap-5 text-xs font-mono text-neutral-400">
             <a
-              href="https://github.com/zaheerjk"
+              href="https://github.com/mdzaheerjk"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors flex items-center gap-1.5"
@@ -42,7 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/mdzaheerjk"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors flex items-center gap-1.5"
@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenResume }) => {
             </a>
 
             <a
-              href="mailto:info.zaheerjk@gmail.com"
+              href="mailto:zaheerjkxai@gmail.com"
               className="hover:text-white transition-colors flex items-center gap-1.5"
             >
               <Mail className="w-3.5 h-3.5" />

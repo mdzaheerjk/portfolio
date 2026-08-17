@@ -7,6 +7,7 @@ import {
   FileText, 
   Mail, 
   Github, 
+  Linkedin,
   Compass, 
   ArrowRight, 
   X
@@ -135,23 +136,34 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
     },
     {
       id: 'action-email',
-      title: 'Send Direct Email (info.zaheerjk@gmail.com)',
+      title: 'Send Direct Email (zaheerjkxai@gmail.com)',
       subtitle: 'Open default email client to collaborate',
       category: 'Quick Actions',
       icon: <Mail className="w-4 h-4 text-black" />,
       action: () => {
-        window.open('mailto:info.zaheerjk@gmail.com', '_blank');
+        window.open('mailto:zaheerjkxai@gmail.com', '_blank');
         onClose();
       },
     },
     {
       id: 'action-github',
-      title: 'Visit GitHub Profile (@zaheerjk)',
-      subtitle: 'Explore 20+ public repositories and daily commits',
+      title: 'Visit GitHub Profile (@mdzaheerjk)',
+      subtitle: 'Explore public repositories, models, and daily commits',
       category: 'Links',
       icon: <Github className="w-4 h-4 text-black" />,
       action: () => {
-        window.open('https://github.com/zaheerjk', '_blank');
+        window.open('https://github.com/mdzaheerjk', '_blank');
+        onClose();
+      },
+    },
+    {
+      id: 'action-linkedin',
+      title: 'Connect on LinkedIn (mdzaheerjk)',
+      subtitle: 'Professional profile, network, and experience',
+      category: 'Links',
+      icon: <Linkedin className="w-4 h-4 text-black" />,
+      action: () => {
+        window.open('https://linkedin.com/in/mdzaheerjk', '_blank');
         onClose();
       },
     },

@@ -19,7 +19,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
-    const mailtoUrl = `mailto:info.zaheerjk@gmail.com?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:zaheerjkxai@gmail.com?subject=${encodeURIComponent(
       formData.subject || `Portfolio Message from ${formData.name}`
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
@@ -30,7 +30,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
   };
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('info.zaheerjk@gmail.com');
+    navigator.clipboard.writeText('zaheerjkxai@gmail.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2000);
   };
@@ -71,10 +71,10 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
                       Direct Email
                     </span>
                     <a
-                      href="mailto:info.zaheerjk@gmail.com"
+                      href="mailto:zaheerjkxai@gmail.com"
                       className="text-xs font-semibold text-neutral-900 hover:text-black transition-colors font-mono"
                     >
-                      info.zaheerjk@gmail.com
+                      zaheerjkxai@gmail.com
                     </a>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
 
               {/* GitHub Card */}
               <a
-                href="https://github.com/zaheerjk"
+                href="https://github.com/mdzaheerjk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 hover:border-black hover:bg-white transition-all flex items-center justify-between group shadow-2xs"
@@ -109,7 +109,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
                       GitHub
                     </span>
                     <span className="text-xs font-semibold text-neutral-900 group-hover:text-black transition-colors font-mono">
-                      github.com/zaheerjk
+                      github.com/mdzaheerjk
                     </span>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
 
               {/* LinkedIn Card */}
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/mdzaheerjk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 hover:border-black hover:bg-white transition-all flex items-center justify-between group shadow-2xs"
@@ -132,7 +132,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
                       LinkedIn Network
                     </span>
                     <span className="text-xs font-semibold text-neutral-900 group-hover:text-black transition-colors font-mono">
-                      Connect on LinkedIn
+                      linkedin.com/in/mdzaheerjk
                     </span>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
                   Message Dispatched!
                 </h4>
                 <p className="text-xs text-neutral-600 max-w-md mx-auto leading-relaxed">
-                  Thank you! Your default mail client has opened with your message parameters. You can also email directly at <strong className="text-black font-mono">info.zaheerjk@gmail.com</strong>.
+                  Thank you! Your default mail client has opened with your message parameters. You can also email directly at <strong className="text-black font-mono">zaheerjkxai@gmail.com</strong>.
                 </p>
                 <button
                   type="button"

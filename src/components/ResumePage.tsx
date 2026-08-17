@@ -70,16 +70,16 @@ export const ResumePage: React.FC<ResumePageProps> = ({ onOpenResumeModal }) => 
               AI / Machine Learning Engineer • Generative AI & Deep Learning Specialist
             </div>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-mono text-neutral-600">
-              <a href="mailto:info.zaheerjk@gmail.com" className="hover:text-black hover:underline flex items-center gap-1.5 font-medium">
-                <Mail className="w-3.5 h-3.5 text-black" /> info.zaheerjk@gmail.com
+              <a href="mailto:zaheerjkxai@gmail.com" className="hover:text-black hover:underline flex items-center gap-1.5 font-medium">
+                <Mail className="w-3.5 h-3.5 text-black" /> zaheerjkxai@gmail.com
               </a>
               <span>•</span>
-              <a href="https://github.com/zaheerjk" target="_blank" rel="noreferrer" className="hover:text-black hover:underline flex items-center gap-1.5 font-medium">
-                <Github className="w-3.5 h-3.5 text-black" /> github.com/zaheerjk
+              <a href="https://github.com/mdzaheerjk" target="_blank" rel="noreferrer" className="hover:text-black hover:underline flex items-center gap-1.5 font-medium">
+                <Github className="w-3.5 h-3.5 text-black" /> github.com/mdzaheerjk
               </a>
               <span>•</span>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-black hover:underline flex items-center gap-1.5 font-medium">
-                <Linkedin className="w-3.5 h-3.5 text-black" /> LinkedIn
+              <a href="https://linkedin.com/in/mdzaheerjk" target="_blank" rel="noreferrer" className="hover:text-black hover:underline flex items-center gap-1.5 font-medium">
+                <Linkedin className="w-3.5 h-3.5 text-black" /> linkedin.com/in/mdzaheerjk
               </a>
             </div>
           </div>

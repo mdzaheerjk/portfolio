@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
       'Extensible modular architecture allowing addition of novel optimization routines'
     ],
     techStack: ['Python', 'TypeScript', 'React', 'NumPy', 'TensorFlow.js', 'FastAPI', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/zaheerjk/SageStudio',
+    githubUrl: 'https://github.com/mdzaheerjk/SageStudio',
     demoUrl: 'https://sagestudio-preview.app',
     featured: true,
     highlight: 'Algorithm Visualizer',
@@ -39,7 +39,7 @@ export const projectsData: Project[] = [
       'Filterable by mathematical rigor, prerequisite dependencies, and hands-on tracks'
     ],
     techStack: ['TypeScript', 'React', 'Tailwind CSS', 'Vite', 'Markdown Engine'],
-    githubUrl: 'https://github.com/zaheerjk/SageMap',
+    githubUrl: 'https://github.com/mdzaheerjk/SageMap',
     demoUrl: 'https://sagemap-preview.app',
     featured: true,
     highlight: 'Learning Knowledge Graph',
@@ -63,7 +63,7 @@ export const projectsData: Project[] = [
       'Responsive lightweight client with instant latency feedback and confidence graphs'
     ],
     techStack: ['Python', 'TensorFlow', 'Keras', 'FastAPI', 'NumPy', 'HTML5/CSS3', 'JavaScript'],
-    githubUrl: 'https://github.com/zaheerjk/Moodline-Emotion-Detection',
+    githubUrl: 'https://github.com/mdzaheerjk/Moodline-Emotion-Detection',
     demoUrl: 'https://moodline-app.demo',
     featured: true,
     highlight: 'Deep Learning NLP Pipeline',
@@ -87,7 +87,7 @@ export const projectsData: Project[] = [
       'Exportable day-by-day timeline with schedule conflict detection'
     ],
     techStack: ['Python', 'LangChain', 'Google Gemini API', 'FastAPI', 'React', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/zaheerjk/AI-Travel-Itinerary-Planner',
+    githubUrl: 'https://github.com/mdzaheerjk/AI-Travel-Itinerary-Planner',
     demoUrl: 'https://travel-ai-planner.demo',
     featured: true,
     highlight: 'Generative AI & Agentic Flow',
@@ -111,7 +111,7 @@ export const projectsData: Project[] = [
       'Dietary restriction filter detecting allergens and sodium/sugar threshold alerts'
     ],
     techStack: ['Python', 'Google Gemini Pro Vision', 'Streamlit', 'PIL / Pillow', 'FastAPI'],
-    githubUrl: 'https://github.com/zaheerjk/Gemini-Health-Vision',
+    githubUrl: 'https://github.com/mdzaheerjk/Gemini-Health-Vision',
     demoUrl: 'https://gemini-health.demo',
     featured: true,
     highlight: 'Multimodal AI Vision',
@@ -135,7 +135,7 @@ export const projectsData: Project[] = [
       'One-click Markdown and PDF export with interactive timestamp chapter links'
     ],
     techStack: ['Python', 'LangChain', 'YouTube Transcript API', 'Streamlit', 'Gemini API'],
-    githubUrl: 'https://github.com/zaheerjk/YouTube-Transcript-To-Notes',
+    githubUrl: 'https://github.com/mdzaheerjk/YouTube-Transcript-To-Notes',
     demoUrl: 'https://yt-notes-ai.demo',
     featured: true,
     highlight: 'Map-Reduce LLM Pipeline',
@@ -159,7 +159,7 @@ export const projectsData: Project[] = [
       'Gap analysis module comparing candidate tech stack with JD prerequisites'
     ],
     techStack: ['Python', 'PyPDF2', 'Streamlit', 'Google GenAI', 'Scikit-learn'],
-    githubUrl: 'https://github.com/zaheerjk/ATS-Resume-Expert-AI',
+    githubUrl: 'https://github.com/mdzaheerjk/ATS-Resume-Expert-AI',
     demoUrl: 'https://ats-expert.demo',
     featured: false,
     highlight: 'Semantic Evaluation & Parsing',
@@ -183,7 +183,7 @@ export const projectsData: Project[] = [
       'Confusion matrix evaluation with rigorous Precision-Recall optimization for low false negatives'
     ],
     techStack: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'Matplotlib', 'Scikit-learn'],
-    githubUrl: 'https://github.com/zaheerjk/Solar-Panel-Defect-Classification',
+    githubUrl: 'https://github.com/mdzaheerjk/Solar-Panel-Defect-Classification',
     featured: false,
     highlight: 'CNN & Explainable AI (Grad-CAM)',
     metrics: [
@@ -206,7 +206,7 @@ export const projectsData: Project[] = [
       'Production FastAPI deployment with automated batch and single-record prediction endpoints'
     ],
     techStack: ['Python', 'Scikit-learn', 'XGBoost', 'Optuna', 'Pandas', 'FastAPI', 'Docker'],
-    githubUrl: 'https://github.com/zaheerjk/Telecom-Churn-Prediction-ML',
+    githubUrl: 'https://github.com/mdzaheerjk/Telecom-Churn-Prediction-ML',
     demoUrl: 'https://churn-predictor.demo',
     featured: false,
     highlight: 'XGBoost & Optuna Optimization',
