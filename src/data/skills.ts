@@ -1,153 +1,84 @@
-import type { SkillCategory } from "@/types";
+import { SkillCategory } from '../types';
 
-export const skillCategories: SkillCategory[] = [
+export const skillsData: SkillCategory[] = [
   {
-    id: "programming",
-    title: "Programming",
+    name: 'Programming & Languages',
+    description: 'Foundational programming languages and computational problem-solving toolsets.',
     skills: [
-      { name: "Python", level: 90 },
-      { name: "Java", level: 75 },
-      { name: "SQL", level: 80 },
-      { name: "C++", level: 65 },
-      { name: "JavaScript", level: 70 },
-    ],
+      { name: 'Python', level: 'Advanced', highlight: 'Data structures, OOP, async, typing, profiling' },
+      { name: 'C++', level: 'Core', highlight: 'Data Structures & Algorithms, memory concepts' },
+      { name: 'SQL', level: 'Advanced', highlight: 'Complex joins, window functions, query planning' },
+      { name: 'HTML5', level: 'Core', highlight: 'Semantic structure, accessibility, web standards' },
+      { name: 'CSS3', level: 'Core', highlight: 'Tailwind CSS, responsive grid & flexbox layouts' },
+      { name: 'JavaScript / TypeScript', level: 'Core', highlight: 'Modern ES6+, DOM manipulation, API integration' }
+    ]
   },
   {
-    id: "libraries",
-    title: "Libraries",
+    name: 'Machine Learning',
+    description: 'Statistical modeling, algorithmic training, feature engineering, and evaluation.',
     skills: [
-      { name: "NumPy", level: 85 },
-      { name: "Pandas", level: 88 },
-      { name: "Matplotlib", level: 80 },
-      { name: "Scikit-Learn", level: 85 },
-      { name: "TensorFlow", level: 80 },
-      { name: "Keras", level: 78 },
-      { name: "PyTorch", level: 82 },
-      { name: "OpenCV", level: 75 },
-      { name: "NLTK", level: 70 },
-      { name: "SpaCy", level: 72 },
-      { name: "Transformers", level: 80 },
-      { name: "LangChain", level: 78 },
-      { name: "LangGraph", level: 70 },
-      { name: "HuggingFace", level: 82 },
-    ],
+      { name: 'Scikit-learn', level: 'Advanced', highlight: 'Pipelines, estimators, cross-validation, metrics' },
+      { name: 'Pandas', level: 'Advanced', highlight: 'Vectorized data wrangling, time-series, indexing' },
+      { name: 'NumPy', level: 'Advanced', highlight: 'N-dimensional arrays, linear algebra, broadcasting' },
+      { name: 'XGBoost', level: 'Advanced', highlight: 'Gradient boosting, tree regularization, feature importance' },
+      { name: 'Optuna', level: 'Practitioner', highlight: 'Bayesian hyperparameter optimization, pruning' },
+      { name: 'Feature Engineering', level: 'Advanced', highlight: 'Encoding, scaling, PCA, collinearity handling' }
+    ]
   },
   {
-    id: "ml",
-    title: "Machine Learning",
+    name: 'Deep Learning',
+    description: 'Neural network architectures, backpropagation, and multi-layer gradient flows.',
     skills: [
-      { name: "Regression", level: 85 },
-      { name: "Classification", level: 88 },
-      { name: "Clustering", level: 75 },
-      { name: "Recommendation Systems", level: 72 },
-      { name: "Time Series", level: 70 },
-      { name: "Feature Engineering", level: 82 },
-      { name: "Model Evaluation", level: 85 },
-    ],
+      { name: 'TensorFlow', level: 'Advanced', highlight: 'Graph execution, custom layers, tf.data pipelines' },
+      { name: 'Keras', level: 'Advanced', highlight: 'Sequential & Functional APIs, callbacks, model saving' },
+      { name: 'PyTorch', level: 'Practitioner', highlight: 'Tensors, autograd, custom Dataset/DataLoader modules' },
+      { name: 'CNN (Convolutional Networks)', level: 'Advanced', highlight: 'Feature maps, pooling, transfer learning, Grad-CAM' },
+      { name: 'RNN / LSTM / BiGRU', level: 'Advanced', highlight: 'Sequential dependencies, vanishing gradient mitigation' },
+      { name: 'Transformers', level: 'Practitioner', highlight: 'Self-attention mechanisms, multi-head layers, enc-dec' }
+    ]
   },
   {
-    id: "dl",
-    title: "Deep Learning",
+    name: 'Generative AI & LLMs',
+    description: 'Prompt engineering, orchestration frameworks, retrieval pipelines, and agentic workflows.',
     skills: [
-      { name: "CNN", level: 82 },
-      { name: "RNN", level: 75 },
-      { name: "LSTM", level: 78 },
-      { name: "GRU", level: 72 },
-      { name: "Transformers", level: 80 },
-      { name: "Transfer Learning", level: 85 },
-      { name: "Fine Tuning", level: 78 },
-    ],
+      { name: 'LLMs & Foundation Models', level: 'Advanced', highlight: 'Gemini, GPT series, Llama, prompt engineering' },
+      { name: 'RAG (Retrieval-Augmented Gen)', level: 'Advanced', highlight: 'Chunking strategies, hybrid search, context reranking' },
+      { name: 'LangChain', level: 'Advanced', highlight: 'Chains, memory buffers, document loaders, output parsers' },
+      { name: 'LangGraph', level: 'Practitioner', highlight: 'Stateful multi-actor agent workflows and cycles' },
+      { name: 'AI Agents', level: 'Practitioner', highlight: 'Tool calling, plan-and-solve loops, autonomous execution' },
+      { name: 'Prompt Engineering', level: 'Advanced', highlight: 'Few-shot prompting, Chain-of-Thought, ReAct pattern' }
+    ]
   },
   {
-    id: "cv",
-    title: "Computer Vision",
+    name: 'Databases & Vector Search',
+    description: 'Relational, document, graph, and embedding vector search storage engines.',
     skills: [
-      { name: "Image Classification", level: 85 },
-      { name: "Object Detection", level: 78 },
-      { name: "Segmentation", level: 70 },
-      { name: "OCR", level: 72 },
-      { name: "Face Recognition", level: 75 },
-      { name: "Medical Imaging", level: 68 },
-    ],
+      { name: 'PostgreSQL', level: 'Advanced', highlight: 'Relational design, indexing, pgvector extension' },
+      { name: 'MongoDB', level: 'Core', highlight: 'Document aggregation pipelines, BSON schemas' },
+      { name: 'Neo4j', level: 'Practitioner', highlight: 'Graph property models, Cypher query language' },
+      { name: 'Pinecone / ChromaDB', level: 'Advanced', highlight: 'Vector indexing, cosine similarity, metadata filtering' }
+    ]
   },
   {
-    id: "nlp",
-    title: "Natural Language Processing",
+    name: 'Deployment & MLOps',
+    description: 'Production containerization, API development, serving, and model tracking.',
     skills: [
-      { name: "Tokenization", level: 85 },
-      { name: "Embeddings", level: 82 },
-      { name: "Sentiment Analysis", level: 88 },
-      { name: "Text Classification", level: 85 },
-      { name: "Named Entity Recognition", level: 78 },
-      { name: "Summarization", level: 75 },
-      { name: "Question Answering", level: 72 },
-    ],
+      { name: 'FastAPI', level: 'Advanced', highlight: 'Asynchronous endpoints, Pydantic schemas, OpenAPI docs' },
+      { name: 'Docker', level: 'Practitioner', highlight: 'Multi-stage container builds, microservices, volume binding' },
+      { name: 'MLflow', level: 'Practitioner', highlight: 'Experiment tracking, model registry, artifact logging' },
+      { name: 'AWS / Cloud Services', level: 'Practitioner', highlight: 'S3, EC2 instances, Lambda serverless triggers' },
+      { name: 'Azure', level: 'Core', highlight: 'Cloud compute fundamentals and storage buckets' },
+      { name: 'Streamlit', level: 'Advanced', highlight: 'Rapid interactive prototyping, session state management' }
+    ]
   },
   {
-    id: "genai",
-    title: "Generative AI",
+    name: 'Computer Vision',
+    description: 'Visual perception, image processing, segmentation, and defect localization.',
     skills: [
-      { name: "LLMs", level: 80 },
-      { name: "Prompt Engineering", level: 85 },
-      { name: "RAG", level: 78 },
-      { name: "Vector Databases", level: 75 },
-      { name: "Agents", level: 72 },
-      { name: "Multi-Agent Systems", level: 68 },
-      { name: "Function Calling", level: 75 },
-      { name: "Tool Calling", level: 73 },
-    ],
-  },
-  {
-    id: "frameworks",
-    title: "AI Frameworks",
-    skills: [
-      { name: "LangChain", level: 78 },
-      { name: "LangGraph", level: 70 },
-      { name: "LangSmith", level: 65 },
-      { name: "LlamaIndex", level: 72 },
-      { name: "CrewAI", level: 68 },
-      { name: "AutoGen", level: 65 },
-    ],
-  },
-  {
-    id: "databases",
-    title: "Databases",
-    skills: [
-      { name: "MySQL", level: 80 },
-      { name: "MongoDB", level: 75 },
-      { name: "SQLite", level: 82 },
-      { name: "FAISS", level: 75 },
-      { name: "ChromaDB", level: 72 },
-      { name: "Pinecone", level: 68 },
-    ],
-  },
-  {
-    id: "deployment",
-    title: "Deployment",
-    skills: [
-      { name: "Streamlit", level: 85 },
-      { name: "Flask", level: 78 },
-      { name: "FastAPI", level: 80 },
-      { name: "Docker", level: 72 },
-      { name: "Git", level: 85 },
-      { name: "Vercel", level: 80 },
-      { name: "Render", level: 75 },
-      { name: "AWS", level: 60 },
-    ],
-  },
-  {
-    id: "tools",
-    title: "Tools",
-    skills: [
-      { name: "VS Code", level: 90 },
-      { name: "Jupyter", level: 88 },
-      { name: "Google Colab", level: 90 },
-      { name: "Anaconda", level: 82 },
-      { name: "GitHub", level: 88 },
-      { name: "Linux", level: 70 },
-      { name: "Windows", level: 85 },
-    ],
-  },
+      { name: 'OpenCV', level: 'Advanced', highlight: 'Filtering, edge detection, color space transforms, contours' },
+      { name: 'YOLO', level: 'Practitioner', highlight: 'Real-time bounding box detection, anchor boxes, NMS' },
+      { name: 'Image Classification', level: 'Advanced', highlight: 'Multi-class/multi-label transfer learning pipelines' },
+      { name: 'Object Detection', level: 'Practitioner', highlight: 'Spatial localization, IoU evaluation, mAP benchmarks' }
+    ]
+  }
 ];
-
-export const allSkillNames = skillCategories.flatMap((c) => c.skills.map((s) => s.name));

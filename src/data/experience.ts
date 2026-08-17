@@ -1,88 +1,79 @@
-import type { Experience } from "@/types";
+import { JourneyMilestone } from '../types';
 
-export const experiences: Experience[] = [
+export const journeyData: JourneyMilestone[] = [
   {
-    id: "exp-1",
-    title: "ML Intern",
-    organization: "Tech Startup (Placeholder)",
-    type: "internship",
-    location: "Remote, India",
-    startDate: "2024-06",
-    endDate: "2024-09",
-    description: "Worked on building and deploying machine learning models for customer analytics. Assisted in data pipeline development and model evaluation.",
-    technologies: ["Python", "Scikit-Learn", "Pandas", "SQL", "Docker"],
-    achievements: ["Improved model accuracy by 8%", "Built automated data preprocessing pipeline"],
+    id: 'generative-ai-agents',
+    title: 'Generative AI & Agentic Systems',
+    period: '2024 – Present',
+    tagline: 'Orchestrating Foundation Models, Multi-Agent Loops & RAG Architectures',
+    description: 'Deep diving into the frontier of applied Generative AI. Building autonomous agentic systems with LangGraph, scalable semantic search retrieval (RAG) pipelines with vector stores, and structured multimodal workflows.',
+    highlights: [
+      'Engineered RAG pipelines with hybrid keyword-vector retrieval and reranking for technical documentation',
+      'Developed multi-agent decision systems incorporating structured tool invocation and feedback loops',
+      'Built multimodal vision assistants integrating Gemini API for spatial and visual reasoning',
+      'Explored self-hosted local model inferences and prompt optimization patterns'
+    ],
+    technologies: ['LangChain', 'LangGraph', 'Gemini Pro / Flash', 'Pinecone', 'FastAPI', 'Python'],
+    category: 'Engineering'
   },
   {
-    id: "exp-2",
-    title: "Freelance ML Developer",
-    organization: "Self-Employed",
-    type: "freelance",
-    location: "Remote",
-    startDate: "2023-01",
-    endDate: "Present",
-    description: "Developing custom ML solutions for small businesses including sentiment analysis tools, recommendation systems, and data dashboards.",
-    technologies: ["Python", "Streamlit", "TensorFlow", "FastAPI"],
-    achievements: ["Delivered 5+ client projects", "Maintained 100% client satisfaction"],
+    id: 'deep-learning-nlp-cv',
+    title: 'Deep Learning, NLP & Computer Vision',
+    period: '2023 – 2024',
+    tagline: 'Mathematical Modeling of Neural Networks from Fundamental Principles',
+    description: 'Transitioned from statistical machine learning to deep hierarchical representations. Built and trained Convolutional Neural Networks, Recurrent Architectures (LSTM, BiGRU), and explored Transformer self-attention mechanisms.',
+    highlights: [
+      'Implemented BiGRU sequence classifiers for fine-grained multi-emotion textual recognition (Moodline)',
+      'Trained custom CNN models with Grad-CAM explainability for solar cell defect detection',
+      'Implemented tokenization pipelines, custom word embeddings, and attention visualization matrices',
+      'Evaluated hyperparameter dynamics (optimizers, learning rate schedulers, dropout regularization)'
+    ],
+    technologies: ['TensorFlow', 'Keras', 'PyTorch', 'OpenCV', 'Scikit-learn', 'NumPy'],
+    category: 'Engineering'
   },
   {
-    id: "exp-3",
-    title: "Research Assistant",
-    organization: "University Lab (Placeholder)",
-    type: "research",
-    location: "India",
-    startDate: "2023-08",
-    endDate: "2024-05",
-    description: "Assisted in research on deep learning applications in medical image analysis. Conducted literature reviews and implemented baseline models.",
-    technologies: ["PyTorch", "OpenCV", "NumPy", "Matplotlib"],
-    achievements: ["Co-authored research paper draft", "Implemented 3 baseline architectures"],
+    id: 'applied-machine-learning',
+    title: 'Applied Machine Learning & Statistical Modeling',
+    period: '2023',
+    tagline: 'End-to-End Predictive Pipelines, Feature Engineering & Hyperparameter Tuning',
+    description: 'Constructed end-to-end tabular machine learning systems, conducting exploratory data analysis, hypothesis testing, feature transformation, and metric-driven validation across regression and classification tasks.',
+    highlights: [
+      'Developed churn prediction pipelines leveraging XGBoost and automated Optuna Bayesian optimization',
+      'Mastered feature engineering techniques: target encoding, polynomial features, variance inflation factor',
+      'Conducted rigorous cross-validation and bias-variance tradeoff diagnostics',
+      'Created SageStudio visualizer to dissect hyperplane geometries and decision surface topologies'
+    ],
+    technologies: ['Scikit-learn', 'XGBoost', 'Optuna', 'Pandas', 'NumPy', 'Matplotlib'],
+    category: 'Engineering'
   },
   {
-    id: "exp-4",
-    title: "Open Source Contributor",
-    organization: "Various Projects",
-    type: "opensource",
-    location: "Remote",
-    startDate: "2022-06",
-    endDate: "Present",
-    description: "Contributing to open-source ML libraries and tools. Fixed bugs, improved documentation, and added new features.",
-    technologies: ["Python", "Git", "GitHub"],
-    achievements: ["50+ contributions", "Merged PRs in 3 repositories"],
+    id: 'software-engineering-apis',
+    title: 'Software Engineering & Production Systems',
+    period: '2022 – 2023',
+    tagline: 'Building Performant APIs, Modular Codebases & Deployment Frameworks',
+    description: 'Bridging the gap between isolated Jupyter notebooks and production software. Focused on clean asynchronous API architectures, Pydantic schemas, containerization with Docker, and responsive user interfaces.',
+    highlights: [
+      'Built asynchronous REST APIs with FastAPI serving ML model inferences with sub-20ms latency',
+      'Containerized full-stack AI workflows into reproducible Docker environments',
+      'Engineered interactive frontend dashboards for real-time model interaction and parameter control',
+      'Practiced modular software design, type hinting, unit testing, and continuous code linting'
+    ],
+    technologies: ['Python', 'FastAPI', 'Docker', 'PostgreSQL', 'TypeScript', 'Tailwind CSS'],
+    category: 'Engineering'
   },
   {
-    id: "exp-5",
-    title: "Hackathon Participant",
-    organization: "Multiple Events",
-    type: "hackathon",
-    location: "India",
-    startDate: "2022-01",
-    endDate: "Present",
-    description: "Participated in 10+ hackathons focusing on AI/ML solutions for social impact, healthcare, and education.",
-    technologies: ["Python", "TensorFlow", "React", "FastAPI"],
-    achievements: ["Top 10 in 3 hackathons", "Built 8 hackathon projects"],
-  },
-  {
-    id: "exp-6",
-    title: "Teaching Assistant",
-    organization: "Programming Club",
-    type: "teaching",
-    location: "College, India",
-    startDate: "2022-08",
-    endDate: "2024-04",
-    description: "Mentored junior students in Python programming and introductory machine learning concepts through workshops and study groups.",
-    technologies: ["Python", "Jupyter", "Scikit-Learn"],
-    achievements: ["Conducted 15+ workshops", "Mentored 50+ students"],
-  },
-];
-
-export const experienceTypes = [
-  { id: "all", label: "All" },
-  { id: "internship", label: "Internships" },
-  { id: "freelance", label: "Freelancing" },
-  { id: "research", label: "Research" },
-  { id: "opensource", label: "Open Source" },
-  { id: "hackathon", label: "Hackathons" },
-  { id: "volunteer", label: "Volunteer" },
-  { id: "teaching", label: "Teaching" },
-  { id: "mentoring", label: "Mentoring" },
+    id: '365-days-coding',
+    title: '#365DaysOfCoding & Open Source',
+    period: 'Continuous',
+    tagline: 'Documented Daily Engineering Commitment & Collaborative Knowledge Sharing',
+    description: 'A disciplined commitment to daily public problem solving, algorithmic challenges, repository maintenance, and sharing structured learning resources (SageMap) with the developer community.',
+    highlights: [
+      'Maintained consistent daily coding and repository commits across GitHub',
+      'Solved 50+ curated LeetCode algorithmic problems across arrays, graphs, trees, and dynamic programming',
+      'Authored comprehensive open-source study guides: Transformers, Scikit-learn, and SDE sheets',
+      'Actively documenting engineering insights, paper reviews, and implementation retrospectives'
+    ],
+    technologies: ['C++', 'Python', 'Git/GitHub', 'Algorithms & DS', 'Technical Writing'],
+    category: 'Milestone'
+  }
 ];
